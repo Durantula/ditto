@@ -1,0 +1,78 @@
+// Custom bootstrap variables must be set or imported *before* bootstrap.
+/**
+ * Global variables and mixins used across RUI SCSS
+ */
+/**
+ * Responsive Breakpoints
+ */
+/* Museo Sans 300 (san serif font) */
+@font-face {
+  font-family: 'Museo-Sans-300';
+  src: url("https://s1.rui.au.reastatic.net/rui-static/font/museo-sans-300-v1.eot");
+  src: url("https://s1.rui.au.reastatic.net/rui-static/font/museo-sans-300-v1.eot?#iefix") format("embedded-opentype"), url("https://s1.rui.au.reastatic.net/rui-static/font/museo-sans-300-v1.woff") format("woff"), url("https://s1.rui.au.reastatic.net/rui-static/font/museo-sans-300-v1.ttf") format("truetype"), url("https://s1.rui.au.reastatic.net/rui-static/font/museo-sans-300-v1.svg#Museo-Sans-300") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* Museo Sans 500 (san serif font) */
+@font-face {
+  font-family: 'Museo-Sans-500';
+  src: url("https://s1.rui.au.reastatic.net/rui-static/font/museo-sans-500-v1.eot");
+  src: url("https://s1.rui.au.reastatic.net/rui-static/font/museo-sans-500-v1.eot?#iefix") format("embedded-opentype"), url("https://s1.rui.au.reastatic.net/rui-static/font/museo-sans-500-v1.woff") format("woff"), url("https://s1.rui.au.reastatic.net/rui-static/font/museo-sans-500-v1.ttf") format("truetype"), url("https://s1.rui.au.reastatic.net/rui-static/font/museo-sans-500-v1.svg#Museo-Sans-500") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* Museo Sans 700 (san serif font) */
+@font-face {
+  font-family: 'Museo-Sans-700';
+  src: url("https://s1.rui.au.reastatic.net/rui-static/font/museo-sans-700-v2.eot");
+  src: url("https://s1.rui.au.reastatic.net/rui-static/font/museo-sans-700-v2.eot?#iefix") format("embedded-opentype"), url("https://s1.rui.au.reastatic.net/rui-static/font/museo-sans-700-v2.woff") format("woff"), url("https://s1.rui.au.reastatic.net/rui-static/font/museo-sans-700-v2.ttf") format("truetype"), url("https://s1.rui.au.reastatic.net/rui-static/font/museo-sans-700-v2.svg#Museo-Sans-700") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+input:focus {
+  outline: none;
+}
+
+a{
+  text-decoration: none!important;
+  &:focus{
+    text-decoration: none!important;
+  }
+}
+
+.inlineFields{
+  display: flex;
+}
+
+.hiddenTemplate{
+  display: none;
+}
+
+.bodyJson{
+  display: none;
+}
+
+.transparent-error{
+
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0px;
+  left: 0px;
+  background-color: rgba(255,9,9,.5);
+  z-index: 2;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  &-message{
+    width: 80%;
+    margin: auto;
+    color: white!important;
+    font-family: 'Museo-Sans-700';
+    overflow: scroll;
+  }
+}

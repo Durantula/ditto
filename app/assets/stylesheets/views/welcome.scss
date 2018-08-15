@@ -1,0 +1,642 @@
+body{
+  background-color: #fafafa;
+}
+
+.top-bar{
+  height: 80px;
+  width: 100%;
+  background-color: #fff;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-bottom: 1px solid #e3e3e3;
+
+  img{
+    height: 40px;
+    width: auto;
+  }
+}
+
+.header{
+  padding: 50px 0;
+  background-color: #fafafa;
+  border-bottom: 1px solid #e3e3e3;
+  h1{
+    color: #3b4151;
+    margin-bottom: 30px;
+    font-family: "Museo-Sans-700";
+  }
+
+  p{
+    color: #3b4151;
+    font-family: "Museo-Sans-300";
+  }
+}
+
+.server{
+  box-shadow: 0 1px 2px 0 rgba(0,0,0,.15);
+  padding: 30px 0;
+  background-color: white;
+  h4{
+    font-family: "Museo-Sans-300";
+    color:  #3b4151;
+  }
+
+  .dropdown{
+    .server-button{
+      background-color: #fff;
+      border: 1px solid #e3e3e3;
+      padding: 10px 20px;
+      background-color: #3b4151;
+      font-family: "Museo-Sans-300";
+    }
+  }
+}
+
+.endpoints {
+  background-color: #fafafa;
+  margin: 50px 0;
+
+  .post-box{
+    border-color: #49cc90;
+    background: rgba(73,204,144,.1);
+  }
+  .put-box{
+    border-color: #fca130;
+    background: rgba(252,161,48,.1);
+  }
+
+  .endpoints-put-tag{
+    background: #fca130;
+  }
+  .patch-box{
+
+  }
+
+  .endpoints-content-put{
+    border-top: 1px solid #fca130!important;
+  }
+
+  &-box {
+    width: 100%;
+    border: 1px solid #61affe;
+    border-radius: 4px;
+    box-shadow: 0 0 3px rgba(0, 0, 0, .19);
+    background-color: rgba(97, 175, 254, 0.1);
+    margin-bottom: 10px;
+    position: relative;
+  }
+  &-get {
+    display: flex;
+    align-items: center;
+    height: 50px;
+    cursor: pointer;
+  }
+
+  &-get-tag {
+    cursor: pointer;
+    background-color: #61affe;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100px;
+    height: 40px;
+    border-radius: 4px;
+    margin-left: 5px;
+    p {
+      font-family: "Museo-Sans-700";
+      color: white;
+      text-transform: uppercase;
+      margin: 0px;
+      font-size: 14px;
+      letter-spacing: 1.5px;
+    }
+  }
+
+  &-post-tag{
+    background-color: #49cc90;
+  }
+  &-content-post{
+    border-top: 1px solid #49cc90!important;
+  }
+  &-content{
+    transition: 0.5s;
+    border-top: 1px solid #61affe;
+    display: none;
+    .parameters{
+      width: 100%;
+      background-color: #fff;
+      height: 60px;
+      display: flex;
+      align-items: center;
+      p{
+        padding-left: 10px;
+        color: #3b4151;
+        font-family: "Museo-Sans-300";
+        margin: 0px;
+        text-transform: capitalize;
+      }
+    }
+    .parameters-fields{
+      display: flex;
+      align-items: center;
+      position: relative;
+      p{
+        margin: 0px;
+        color: #3b4151;
+        font-family: "Museo-Sans-300";
+        padding: 10px 0 0 0;
+      }
+      sup{
+        color: red;
+        font-size: 12px;
+        font-family: "Museo-Sans-300";
+      }
+      .heading-underline{
+        border-bottom: 1px solid #e3e3e3;
+      }
+    }
+    .parameter-type{
+      font-style: italic;
+      margin: 0px!important;
+      padding: 0px!important;
+      font-size: 14px;
+      color: grey!important;
+    }
+    .parameter-input{
+      display: flex;
+      flex-direction: column;
+      padding-bottom: 10px;
+      position: relative!important;
+      input{
+        padding: 5px 0 5px 5px;
+        color: #3b4151;
+        font-family: "Museo-Sans-300";
+        margin: 10px 0 0;
+        width: 400px;
+      }
+    }
+  }
+
+
+  &-name{
+    margin: 0px;
+    font-family: "Museo-Sans-500";
+    color:  #3b4151;
+    padding-left: 20px;
+    font-size: 18px;
+    letter-spacing: 1.5px;
+  }
+
+  &-description{
+    margin: 0px;
+    font-family: "Museo-Sans-300";
+    color:  #3b4151;
+    padding-left: 20px;
+    font-size: 14px;
+    text-transform: capitalize;
+  }
+}
+
+.apiAddBox{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.addApiButton{
+  background-color: white;
+  color: #3b4151;
+  border-color: #e3e3e3;
+  border-radius: 4px;
+  font-family: "Museo-Sans-300";
+  outline: none;
+  box-shadow: none;
+
+  &:hover{
+    background-color: #3b4151;
+    color: white;
+    border-color: #3b4151;
+  }
+  &:focus{
+    outline: none;
+    box-shadow: none;
+  }
+}
+
+.apiModal{
+  font-family: "Museo-Sans-300";
+  color: #3b4151;
+
+  button{
+    span{
+      color: #e3e3e3;
+    }
+  }
+}
+.modal-header{
+  border-bottom: 1px solid #e3e3e3;
+}
+.apiModalFooter{
+  background-color: #fafafa;
+  border-top: none;
+}
+
+.apiModalBody{
+  background-color: #fafafa;
+  form{
+    margin: 15px 0;
+
+    input{
+      display: block;
+      padding: 10px 0 10px 10px;
+      font-family: "Museo-Sans-300";
+      color: #3b4151;
+      width: 100%;
+      max-width: 80%;
+      margin: 5px auto;
+      &::placeholder{
+        font-family: "Museo-Sans-300";
+        color: #3b4151;
+      }
+    }
+  }
+}
+
+.apiClose{
+  background-color: #3b4151;
+  color: white;
+  font-family: "Museo-Sans-300";
+  border-radius: 4px;
+}
+
+.apiSubmit{
+  background-color: #61affe;
+  color: white;
+  font-family: "Museo-Sans-300";
+  border-radius: 4px;
+  border: 1px solid #61affe;
+}
+
+.execute{
+  height: 41px;
+  position: relative;
+  width: 100%;
+  cursor: pointer;
+  background-color: #61affe;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 4px;
+  margin: 10px 0;
+  p{
+    font-family: "Museo-Sans-700"!important;
+    color: white!important;
+    text-transform: uppercase;
+    margin: 0px;
+    font-size: 14px;
+    letter-spacing: 1.5px;
+    padding: 10px 0!important;
+  }
+}
+
+@keyframes spinner {
+  to {
+    transform: rotate(360deg); }
+}
+
+.loaderIcon::after {
+  content: '';
+  box-sizing: border-box;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 20px;
+  height: 20px;
+  margin-top: -10px;
+  margin-left: -10px;
+  border-radius: 50%;
+  border: 2px solid #ccc;
+  border-top-color: #fff;
+  animation: spinner .6s linear infinite;
+}
+
+
+.post-execute{
+  background-color: #49cc90;
+}
+.output{
+  width: 100%;
+  background-color: #3b4151;
+  margin: 20px 0;
+  border-radius: 4px;
+  padding: 20px;
+
+  pre{
+    color: white;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+  }
+}
+
+.hiddenUrlValue{
+  display: none;
+}
+
+.hiddenId{
+  display: none;
+}
+
+.pathDropdown{
+  background-color: white;
+  position: absolute;
+  width: 400px;
+  border-top: 0px;
+  display: none;
+  z-index: 10;
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.19);
+
+  ul{
+    padding: 0px;
+    margin: 0px;
+    li{
+      position: relative;
+      list-style: none;
+      color: #3b4151;
+      font-family: "Museo-Sans-300";
+      margin: 0px;
+      padding: 10px;
+      cursor: pointer;
+      z-index: 2;
+      &:hover{
+        background-color: #fafafa;
+      }
+
+      .savedQueryDelete, .savedPathDelete{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        top:0px;
+        right: 0px;
+        width: 50px;
+        height: 100%;
+        background-color: #ff7878;
+        color: white;
+        font-size: 20px;
+        font-family: "Museo-Sans-300";
+        border: none;
+        box-shadow: none;
+        cursor: pointer;
+        &:hover{
+          background-color: #ff5757;
+
+        }
+      }
+    }
+  }
+
+  input{
+    margin: 0px!important;
+    padding: 10px!important;
+    border: none;
+    border-top: 1px solid #e3e3e3;
+  }
+
+  .addPath, .addQuery{
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    height: 45px;
+    width: 50px;
+    background-color: #81ff81;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    font-size: 20px;
+    font-family: "Museo-Sans-300";
+    &:hover{
+      background-color: #69d169;
+    }
+  }
+  a{
+    padding: 10px;
+    color: #3b4151;
+    font-family: "Museo-Sans-300";
+    display: block;
+  }
+
+  &-heading{
+    width: 100%;
+    background-color: #e3e3e3;
+    display: flex;
+    align-items: center;
+    p{
+      margin: 0;
+      color: white!important;
+      font-family: "Museo-Sans-300";
+      padding: 10px!important;
+    }
+  }
+}
+
+.changeApiBox{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+.codeMirrorEditor{
+  padding-top: 10px;
+}
+
+
+.json-packet-box{
+  background-color: #3b4151;
+  border-color: #3b4151;
+  box-shadow: none;
+  font-family: "Museo-Sans-300";
+  border-radius: 0px;
+
+  &:focus, &:hover, &:active{
+    text-decoration: none;
+    outline: none;
+    box-shadow: none!important
+  }
+}
+
+.jsonDropdownBox{
+  margin-top: 10px;
+}
+
+.jsonDropdown {
+  padding: 0px;
+  border-radius: 0px;
+  ul {
+    padding: 0px;
+    margin: 0px;
+
+    .jsonSavedTemplate {
+      position: relative;
+      list-style: none;
+      color: #3b4151;
+      font-family: "Museo-Sans-300";
+      margin: 0px;
+      padding: 10px;
+      cursor: pointer;
+      z-index: 2;
+      &:hover {
+        background-color: #fafafa;
+      }
+    }
+
+    .jsonAddTemplate {
+      position: relative;
+      text-align: center;
+      list-style: none;
+      color: #fff;
+      font-family: "Museo-Sans-300";
+      margin: 0px;
+      padding: 10px;
+      cursor: pointer;
+      z-index: 2;
+      background-color: #81ff81;
+      &:hover {
+        background-color: #69D171;
+      }
+    }
+
+    .jsonPathEdit{
+
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: absolute;
+      top: 0px;
+      right: 50px;
+      width: 70px;
+      height: 100%;
+      background-color: #e3e3e3;
+      color: white;
+      font-size: 16px;
+      font-family: "Museo-Sans-300";
+      border: none;
+      box-shadow: none;
+      cursor: pointer;
+      &:hover {
+        background-color: #3b4151;
+      }
+    }
+    .jsonPathDelete{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: absolute;
+      top:0px;
+      right: 0px;
+      width: 50px;
+      height: 100%;
+      background-color: #ff7878;
+      color: white;
+      font-size: 20px;
+      font-family: "Museo-Sans-300";
+      border: none;
+      box-shadow: none;
+      cursor: pointer;
+      &:hover{
+        background-color: #ff5757;
+
+      }
+    }
+  }
+
+  &-heading {
+    width: 100%;
+    background-color: #e3e3e3;
+    display: flex;
+    align-items: center;
+    min-width: 400px;
+    p {
+      margin: 0px;
+      color: #fff!important;
+      font-family: "Museo-Sans-300";
+      padding: 10px !important;
+    }
+  }
+}
+
+
+.createTemplateForm{
+  form{
+    text-align: center;
+    width: 80%;
+    margin: auto;
+
+    label{
+      width: 150px;
+      text-align: left;
+    }
+
+    button{
+      padding: 10px 30px;
+      border-radius: 0px;
+      background-color: #61affe;
+      border: none;
+      font-family: "Museo-Sans-700";
+      text-transform: capitalize;
+      box-shadow: none;
+      outline: none;
+      &:hover, &:focus, &:active{
+        background-color: #61affe!important;
+        box-shadow: none!important;
+      }
+    }
+
+    li{
+      cursor: pointer;
+    }
+
+    select{
+      -webkit-appearance: none;
+      -webkit-appearance: menulist;
+      display: block;
+      padding: 10px;
+      font-family: "Museo-Sans-300";
+      color: #3b4151;
+      background-color: grey;
+    }
+
+    input, textarea{
+      padding: 10px;
+      width: 500px;
+      margin: 5px 0;
+      border-radius: 0px;
+      border: 1px solid #eeeeee;
+      background-color: white;
+      font-family: "Museo-Sans-300";
+      color: #3b4151;
+    }
+
+    .prettyJson{
+      background-color: #3b4151;
+      color: #fff!important;
+      &::placeholder{
+        color: #fff
+      }
+    }
+  }
+}
+.executeEndpoint{
+  p{
+    text-align: center;
+    font-family: "Museo-Sans-300";
+    color: white;
+
+    padding: 0px!important;
+  }
+  margin-bottom: 10px;
+}

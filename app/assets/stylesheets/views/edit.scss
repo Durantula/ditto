@@ -1,0 +1,252 @@
+.editAPIBox{
+  form{
+    padding: 20px 0;
+    input{
+      margin: 0 20px;
+      padding: 10px;
+      color: #3b4151;
+      font-family: "Museo-Sans-300";
+      border-radius: 4px;
+      border: 1px solid #e3e3e3;
+      width: 500px
+    }
+    label{
+      color: #3b4151;
+      font-family: "Museo-Sans-300";
+    }
+  }
+}
+
+.editSubmit{
+  width: 200px;
+  cursor: pointer;
+  background-color: #3b4151;
+  color: #ffffff!important;
+  display: block;
+  margin: 0px!important;
+  margin-left: 145px!important;
+}
+
+.editInputWidth{
+  width: 500px!important;
+  
+}
+
+.create-endpoint{
+  cursor: pointer;
+  width: 100%;
+  border: 1px solid #3b4151;
+  height: 70px;
+  border-radius: 4px;
+  margin-top: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.3s;
+  &:hover{
+    background-color: #3b4151;
+    p{
+      color: #fff;
+    }
+  }
+
+  p{
+    margin: 0px;
+    color: #3b4151;
+    font-family: "Museo-Sans-700";
+    transition: 0.3s;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+  }
+}
+
+.editModalForm{
+  form{
+    text-align: center;
+    width: 80%;
+    margin: auto;
+
+    label{
+      width: 150px;
+      text-align: left;
+    }
+
+    button{
+      padding: 10px 30px;
+      border-radius: 0px;
+      background-color: #61affe;
+      border: none;
+      font-family: "Museo-Sans-700";
+      text-transform: capitalize;
+      box-shadow: none;
+      outline: none;
+      &:hover, &:focus, &:active{
+        background-color: #61affe!important;
+        box-shadow: none!important;
+      }
+    }
+
+    li{
+      cursor: pointer;
+    }
+
+    select{
+      -webkit-appearance: none;
+      -webkit-appearance: menulist;
+      display: block;
+      padding: 10px;
+      font-family: "Museo-Sans-300";
+      color: #3b4151;
+      background-color: grey;
+    }
+
+    input, textarea{
+      padding: 10px;
+      width: 500px;
+      margin: 5px 0;
+      border-radius: 0px;
+      border: 1px solid #eeeeee;
+      background-color: white;
+      font-family: "Museo-Sans-300";
+      color: #3b4151;
+    }
+
+    .prettyJson{
+      background-color: #3b4151;
+      color: #fff!important;
+      &::placeholder{
+        color: #fff
+      }
+    }
+  }
+}
+
+.transparentFilter{
+  display: none;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  background-color: rgba(0,0,0,.5);
+  align-items: center;
+  justify-content: center;
+  z-index: 2;
+  width: 100%;
+  height: 100%;
+  p{
+    font-family: "Museo-Sans-300";
+    color: #fff;
+    margin: 0px;
+    letter-spacing: 1.5px;
+  }
+}
+
+.deleteEndpoint, .editEndpoint{
+  cursor: pointer;
+  position: absolute;
+  right: -1px;
+  top: -1px;
+  height: 52px;
+  width:80px;
+  background-color: #ff7878;
+  z-index: 3;
+  border-top-right-radius: 4px;
+  border-bottom-right-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 5px;
+  font-family: "Museo-Sans-300";
+  color: #fff;
+
+  &:hover{
+    background-color: #ff5757;
+    color: white!important;
+  }
+}
+
+.editEndpoint{
+  right: 78px;
+  background-color: #3b4151;
+  border-radius: 0px;
+
+  &:hover{
+    background-color: #77787b;
+  }
+}
+
+.addQueryKey{
+  cursor: pointer;
+  background-color: #3b4151;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 500px;
+  margin-left: 150px;
+  p{
+    font-family: "Museo-Sans-300";
+    color: #fff;
+    margin: 0px;
+    padding: 10px 0;
+  }
+}
+
+.applicationEditInput{
+  display: block;
+  margin-bottom: 5px;
+  label{
+    width: 120px;
+  }
+}
+
+.deleteApiBody{
+  margin: 20px;
+  font-family: "Museo-Sans-300";
+  color: #3b4151;
+}
+.apiDeleteButton{
+  color: white;
+  background-color: #ff7878;
+  border-radius: 4px;
+  border: none;
+  font-family: "Museo-Sans-300";
+  padding: 7px 10px;
+  cursor: pointer;
+
+  &:hover{
+    color: white!important;
+    background-color: #ff5757;
+  }
+}
+
+.requestTypeInput{
+  width: 200px!important;
+}
+
+.editEndpointDialog{
+  max-width: 900px;
+}
+
+.deleteQueryKey{
+  position: absolute;
+  right: 0px;
+  color: #eeeeee;
+  font-size: 20px;
+  cursor: pointer;
+  transition: 0.3s;
+  font-family: sans-serif;
+  &:hover{
+    color: #3b4151;
+
+  }
+}
+.queryBox{
+  margin-bottom: 10px;
+}
+.addQueryBox{
+  position: relative;
+  align-items: center;
+}
+
+.queryDropdownBox{
+  border-radius: 0px;
+}
