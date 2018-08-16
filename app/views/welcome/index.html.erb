@@ -1,123 +1,33 @@
 <%= render "partials/navigation" %>
 <%= render "partials/header" %>
 
-<div class="property">
-  <div class="container">
-  <div class="property-listing">
-    <div class="picture">
-    </div>
-    <div class="content">
-      <div class="property-info">
-        <p class="address">5/4-6 Grattan Street, Haw...</p>
-        <div class="attributes">
-          <p>$550pw</p>
-          <%= image_tag("bed.svg", :alt => "bedrooms icon") %>
-          <p>2</p>
-          <%= image_tag("bath.svg", :alt => "bath icon") %>
-          <p>1</p>
-        </div>
-      </div>
-      <div class="suitable-tenants">
-        <p>54</p>
-        <p class="icon">></p>
-      </div>
-    </div>
-  </div>
-</div>
-</div>
-<div class="property">
-  <div class="container">
-    <div class="property-listing">
-      <div class="picture">
-      </div>
-      <div class="content">
-        <div class="property-info">
-          <p class="address">5/4-6 Grattan Street, Haw...</p>
-          <div class="attributes">
-            <p>$550pw</p>
-            <%= image_tag("bed.svg", :alt => "bedrooms icon") %>
-            <p>2</p>
-            <%= image_tag("bath.svg", :alt => "bath icon") %>
-            <p>1</p>
+<% if @properties.any?%>
+  <% @properties.each do |property| %>
+    <a href="property/<%= property.id %>">
+      <div class="property">
+        <div class="container">
+          <div class="property-listing">
+            <div class="picture" style="background-image: url(<%= property.picture %>)">
+            </div>
+            <div class="content">
+              <div class="property-info">
+                <p class="address"><%= property.address %></p>
+                <div class="attributes">
+                  <p>$<%= property.price %>pw</p>
+                  <%= image_tag("bed.svg", :alt => "bedrooms icon") %>
+                  <p><%= property.bedroom %></p>
+                  <%= image_tag("bath.svg", :alt => "bath icon") %>
+                  <p><%= property.toilet %></p>
+                </div>
+              </div>
+              <div class="suitable-tenants">
+                <p>54</p>
+                <span class="rui-icon rui-icon-arrow-right"></span>
+              </div>
+            </div>
           </div>
         </div>
-        <div class="suitable-tenants">
-          <p>54</p>
-          <p class="icon">></p>
-        </div>
       </div>
-    </div>
-  </div>
-</div>
-<div class="property">
-  <div class="container">
-    <div class="property-listing">
-      <div class="picture">
-      </div>
-      <div class="content">
-        <div class="property-info">
-          <p class="address">5/4-6 Grattan Street, Haw...</p>
-          <div class="attributes">
-            <p>$550pw</p>
-            <%= image_tag("bed.svg", :alt => "bedrooms icon") %>
-            <p>2</p>
-            <%= image_tag("bath.svg", :alt => "bath icon") %>
-            <p>1</p>
-          </div>
-        </div>
-        <div class="suitable-tenants">
-          <p>54</p>
-          <p class="icon">></p>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-<div class="property">
-  <div class="container">
-    <div class="property-listing">
-      <div class="picture">
-      </div>
-      <div class="content">
-        <div class="property-info">
-          <p class="address">5/4-6 Grattan Street, Haw...</p>
-          <div class="attributes">
-            <p>$550pw</p>
-            <%= image_tag("bed.svg", :alt => "bedrooms icon") %>
-            <p>2</p>
-            <%= image_tag("bath.svg", :alt => "bath icon") %>
-            <p>1</p>
-          </div>
-        </div>
-        <div class="suitable-tenants">
-          <p>54</p>
-          <p class="icon">></p>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-<div class="property">
-  <div class="container">
-    <div class="property-listing">
-      <div class="picture">
-      </div>
-      <div class="content">
-        <div class="property-info">
-          <p class="address">5/4-6 Grattan Street, Haw...</p>
-          <div class="attributes">
-            <p>$550pw</p>
-            <%= image_tag("bed.svg", :alt => "bedrooms icon") %>
-            <p>2</p>
-            <%= image_tag("bath.svg", :alt => "bath icon") %>
-            <p>1</p>
-          </div>
-        </div>
-        <div class="suitable-tenants">
-          <p>54</p>
-          <p class="icon">></p>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
+    </a>
+  <% end %>
+<% end %>

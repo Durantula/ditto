@@ -3,8 +3,10 @@
     height: 120px;
     width: 120px;
     border-radius: 100%;
-    border: 1px solid grey;
     margin: 40px auto 0;
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
   }
 
   .name-heading{
@@ -30,6 +32,7 @@
 
 .tenant-income{
   margin: 30px 0;
+  border-radius: 3px;
   &-heading{
     text-align: center;
     font-family: MuseoSans-500;
@@ -38,6 +41,27 @@
     color: #333f48;
     margin: 0px;
   }
+}
+
+.pre_approve{
+  cursor: pointer;
+  background-color: #333f48!important;
+  max-width: 500px;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 40px;
+  border-radius: 3px;
+  margin-bottom: 50px;
+  p{
+    color: white;
+    font-family: MuseoSans-300;
+    font-size: 14px;
+    margin-bottom: 0px;
+
+  }
+
 }
 
 .job{
@@ -51,8 +75,10 @@
     width: 114px;
     height: 114px;
     border-radius: 50%;
-    border: 1px solid grey;
     margin: 0 auto 16px;
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
   }
   p{
     font-family: MuseoSans-100;

@@ -62,6 +62,7 @@ body{
 
   .container{
     padding: 0px;
+    max-width: 500px;
   }
 }
 .property-listing{
@@ -118,6 +119,9 @@ body{
     .suitable-tenants{
       display: flex;
       align-items: center;
+      span{
+        margin-left: 5px;
+      }
       p{
         margin: 0px;
         font-family: MuseoSans-300;
