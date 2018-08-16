@@ -1,10 +1,10 @@
 <%= render "partials/navigation" %>
 
 <div class="tenant">
-  <div class="profile-pic" style="background-image: url(<%= image_url('download.jpeg') %>)">
+  <div class="profile-pic" style="background-image: url(<%= @tenant.img_url %>)">
   </div>
   <div class="name-heading">
-    <h1>Michael Che</h1>
+    <h1><%= @tenant.first_name %> <%= @tenant.last_name %></h1>
   </div>
 </div>
 

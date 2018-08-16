@@ -70,6 +70,11 @@
   box-shadow: 0 1px 2px 0 rgba(32, 40, 46, 0.2);
   max-width: 500px;
 
+  @media screen and (max-width: 530px){
+    margin-left: 15px;
+    margin-right: 15px;
+  }
+
 
   .pet-photo{
     width: 114px;

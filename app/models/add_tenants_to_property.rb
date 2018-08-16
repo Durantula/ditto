@@ -1,0 +1,2 @@
+class AddTenantsToProperty < ApplicationRecord
+end
