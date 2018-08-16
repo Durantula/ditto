@@ -1,46 +1,112 @@
 <%= render "partials/navigation" %>
+
 <div class="search_property">
-  <div class="picture">
+  <div class="picture" style="background-image: url(<%= @property.picture %>)">
 
   </div>
   <div class="content">
-    <p class="address">5/4-6 Grattan Street, Haw...</p>
+    <p class="address"><%= @property.address %></p>
     <div class="attributes">
-      <p>$550pw</p>
+      <p>$<%= @property.price %>pw</p>
       <%= image_tag("bed.svg", :alt => "bedrooms icon") %>
-      <p>2</p>
+      <p><%= @property.bedroom %></p>
       <%= image_tag("bath.svg", :alt => "bath icon") %>
-      <p>1</p>
+      <p><%= @property.toilet %></p>
     </div>
   </div>
 </div>
 
-
+<div id="filters" class="rectangle">
+  <p>Filters</p>
+  <i class="fas fa-angle-down"></i>
+</div>
+<div class="filters">
+  <div class="filter-toggle">
+    <div class="filter-group">
+      <div class="filter-item">
+        <span>Pets</span>
+        <label class="switch">
+          <input type="checkbox">
+          <span class="slider round"></span>
+        </label>
+      </div>
+      <div class="filter-item">
+        <span>Smoker</span>
+        <label class="switch">
+          <input type="checkbox">
+          <span class="slider round"></span>
+        </label>
+      </div>
+      <div class="filter-item">
+        <span>Student</span>
+        <label class="switch">
+          <input type="checkbox">
+          <span class="slider round"></span>
+        </label>
+      </div>
+    </div>
+    <div class="filter-group">
+      <div class="filter-item check">
+        <input type="checkbox" id="1"/>
+        <label for="1" class="todo">
+          <i class="fa fa-check"></i>
+          Full Time
+        </label>
+      </div>
+      <div class="filter-item check">
+        <input type="checkbox" id="2" />
+        <label for="2" class="todo">
+          <i class="fa fa-check"></i>
+          Part Time
+        </label>
+      </div>
+      <div class="filter-item check">
+        <input type="checkbox" id="3"/>
+        <label for="3" class="todo">
+          <i class="fa fa-check"></i>
+          Casual
+        </label>
+      </div>
+    </div>
+    <div class="filter-group range">
+      <div class="range-slider">
+        <input class="range-slider__range" type="range" value="50" min="0" max="500">
+        <span class="range-slider__value">0</span>
+      </div>
+    </div>
+  </div>
+</div>
 <div class="rectangle">
   <p>Suitable Tenants</p>
 </div>
 
-
-<div class="tenant_cell">
-  <div class="highlight">
-    <%= image_tag("highlight.png", :alt => "star icon") %>
-  </div>
-  <div class="profile-pic">
-    <div class="circle"></div>
-  </div>
-  <div class="content">
-    <div class="property-info">
-      <p class="address">Michael Che</p>
-      <div class="attributes">
-        <p>$550pw</p>
-        <%= image_tag("bed.svg", :alt => "bedrooms icon") %>
-        <p>2</p>
-        <%= image_tag("bath.svg", :alt => "bath icon") %>
-        <p>1</p>
+<% if @tenants.any?%>
+  <% @tenants.each do |tenant| %>
+    <a href="/tenants/<%= tenant.id %>">
+      <div class="tenant_cell">
+      <div class="highlight">
+        <%= image_tag("highlight.png", :alt => "star icon") %>
+      </div>
+      <div class="profile-pic">
+        <div class="circle" style="background-image: url(<%= tenant.img_url %>)"></div>
+      </div>
+      <div class="content">
+        <div class="property-info">
+          <p class="address"><%= tenant.first_name %> <%= tenant.last_name %></p>
+          <div class="attributes">
+            <p>$<%= tenant.price %>pw</p>
+            <%= image_tag("bed.svg", :alt => "bedrooms icon") %>
+            <p><%= tenant.bedrooms %></p>
+            <%= image_tag("bath.svg", :alt => "bath icon") %>
+            <p><%= tenant.bathroom %></p>
+          </div>
+        </div>
+      </div>
+      <div class="tenant_link">
+        <span class="rui-icon rui-icon-arrow-right"></span>
       </div>
     </div>
-  </div>
-  <div class="tenant_link">
-    <p>></p>
-  </div>
-</div>
+    </a>
+  <% end %>
+<% end %>
+
