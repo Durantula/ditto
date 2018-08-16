@@ -9,7 +9,15 @@
 //
 // Read Sprockets README (https://github.com/rails/sprockets#sprockets-directives) for details
 // about supported directives.
-//
+//= require jquery
+//= require popper
+//= require bootstrap
 //= require rails-ujs
 //= require turbolinks
 //= require_tree .
+
+$(document).on('turbolinks:load', function() {
+    codeMirrorDictionary = new Object();
+
+
+}

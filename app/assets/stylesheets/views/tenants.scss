@@ -18,6 +18,8 @@
 
 .tenant-description{
   padding: 30px;
+  max-width: 600px;
+  margin: auto;
   p{
     font-family: MuseoSans-300;
     font-size: 16px;
@@ -39,16 +41,18 @@
 }
 
 .job{
-  margin: 35px 15px 66px;
+  margin: 35px auto 66px;
   padding: 15px;
   box-shadow: 0 1px 2px 0 rgba(32, 40, 46, 0.2);
+  max-width: 500px;
 
-  .pet-profile{
+
+  .pet-photo{
     width: 114px;
     height: 114px;
     border-radius: 50%;
     border: 1px solid grey;
-    margin: 16px auto;
+    margin: 0 auto 16px;
   }
   p{
     font-family: MuseoSans-100;
@@ -75,6 +79,9 @@
       font-size: 18px;
       color: #333f48;
     }
+  }
+  .pet-info{
+    text-align: center;
   }
 }
 
