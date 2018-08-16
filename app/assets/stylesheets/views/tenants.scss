@@ -176,13 +176,7 @@
     justify-content: center;
     flex-direction: row;
     text-align: center;
-    width: 110px;
     margin: 0 35px;
-
-    &.check {
-      margin: 0 -5px 0 40px;
-      width: 145px;
-    }
 
     >span {
       margin-right: 6px;
@@ -242,6 +236,29 @@ input:checked + .slider:before {
 .slider.round:before {
   border-radius: 50%;
 }  
+}
+
+@media only screen and (max-width : 480px) {
+  .todo {
+    padding: 7px 0 !important;
+  }
+  .filters .filter-group.range {
+  margin: 3px 5px 6px 10px;
+  width: 340px;
+}
+  .filters {
+.cbox {
+  margin-left: 24px;
+}
+
+    .filter-item {
+      margin: 0 8px;
+
+      &.check {
+        margin: 0 21px;
+      }
+    }
+  }
 }
 
 input[type="checkbox"]{
