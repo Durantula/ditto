@@ -1,0 +1,141 @@
+.search_property{
+
+  .picture{
+    width: 100%;
+    height: 255px;
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url("https://i1.au.reastatic.net/800x600-resize,extend,r=33,g=40,b=46/8308042d48c8dd938efd162e9e4abadbed31c51df6296d485c9e72dd3ef1488b/main.jpg");
+  }
+
+  .content{
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+
+    .address{
+      font-family: "Museo-Sans-500";
+      font-size: 14px;
+      color: #333f48;
+      margin: 0px;
+      line-height: 1.43;
+      margin-bottom: 5px;
+    }
+
+    .attributes{
+      display: flex;
+      p{
+        font-family: "Museo-Sans-300";
+        font-size: 14px;
+        color: #333f48;
+
+        margin-right: 15px;
+        margin-bottom: 0px;
+      }
+
+      img{
+        margin-right: 4px;
+      }
+    }
+  }
+}
+
+.tenant_cell{
+  height: 60px;
+  padding: 23px 13px;
+  border-bottom: solid 1px #d2d6da;
+  display: flex;
+  align-items: center;
+
+  .content{
+    padding: 10px 16px;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    .address{
+      font-family: "Museo-Sans-500";
+      font-size: 14px;
+      color: #333f48;
+      margin: 0px;
+      line-height: 1.43;
+    }
+
+    .attributes{
+      display: flex;
+      p{
+        font-family: "Museo-Sans-300";
+        font-size: 14px;
+        color: #333f48;
+
+        margin-right: 15px;
+        margin-bottom: 0px;
+      }
+
+      img{
+        margin-right: 4px;
+      }
+    }
+  }
+
+  .highlight{
+    img{
+      height: 15px;
+    }
+  }
+
+  .profile-pic{
+    margin-left: 12px;
+    .circle{
+      width: 36px;
+      height: 36px;
+      border-radius: 50px;
+      background-position: center center;
+      background-size: cover;
+      background-repeat: no-repeat;
+      border: 1px solid grey
+    }
+  }
+
+}
+
+.tenant_link{
+  display: flex;
+  align-items: center;
+  p{
+    margin: 0px;
+  }
+}
+
+.tenant-content{
+  display: flex;
+  justify-content: center;
+  .content{
+    padding: 10px 16px;
+    display: flex;
+    justify-content: space-between;
+    .address{
+      font-family: "Museo-Sans-500";
+      font-size: 14px;
+      color: #333f48;
+      margin: 0px;
+      line-height: 1.43;
+    }
+
+    .attributes{
+      display: flex;
+      p{
+        font-family: "Museo-Sans-300";
+        font-size: 14px;
+        color: #333f48;
+
+        margin-right: 15px;
+        margin-bottom: 0px;
+      }
+
+      img{
+        margin-right: 4px;
+      }
+    }
+  }
+}
