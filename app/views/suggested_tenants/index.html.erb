@@ -1,4 +1,4 @@
-<%= render "partials/navigation" %>
+<%= render "partials/navigation" %>\
 <div class="search_property">
   <div class="picture">
 
@@ -15,7 +15,66 @@
   </div>
 </div>
 
-
+<div id="filters" class="rectangle">
+  <p>Filters</p>
+  <i class="fas fa-angle-down"></i>
+</div>
+<div class="filters">
+<div class="filter-toggle">
+  <div class="filter-group">
+    <div class="filter-item">
+      <span>Pets</span>
+      <label class="switch">
+        <input type="checkbox">
+        <span class="slider round"></span>
+      </label>
+    </div>
+    <div class="filter-item">
+      <span>Smoker</span>
+      <label class="switch">
+        <input type="checkbox">
+        <span class="slider round"></span>
+      </label>
+    </div>
+    <div class="filter-item">
+      <span>Student</span>
+      <label class="switch">
+        <input type="checkbox">
+        <span class="slider round"></span>
+      </label>
+    </div>
+  </div>
+  <div class="filter-group">
+    <div class="filter-item check">
+      <input type="checkbox" id="1"/>
+      <label for="1" class="todo">
+        <i class="fa fa-check"></i>
+        Full Time
+      </label>
+    </div>
+    <div class="filter-item check">
+    <input type="checkbox" id="2" />
+    <label for="2" class="todo">
+      <i class="fa fa-check"></i>
+      Part Time
+    </label>
+    </div>
+    <div class="filter-item check">
+    <input type="checkbox" id="3"/>
+    <label for="3" class="todo">
+      <i class="fa fa-check"></i>
+      Casual
+    </label>
+    </div>
+  </div> 
+  <div class="filter-group range">
+    <div class="range-slider">
+    <input class="range-slider__range" type="range" value="50" min="0" max="500">
+    <span class="range-slider__value">0</span>
+  </div>
+</div>  
+  </div>
+</div>
 <div class="rectangle">
   <p>Suitable Tenants</p>
 </div>
