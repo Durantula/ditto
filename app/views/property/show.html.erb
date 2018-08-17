@@ -1,6 +1,6 @@
 <%= render "partials/navigation" %>
 
-<div class="search_property">
+<div class="search_property margin-top-50">
   <div class="picture" style="background-image: url(<%= @property.picture %>)">
 
   </div>
@@ -80,6 +80,8 @@
   <p>Suitable Tenants (<%= @tenants.count %>)</p>
 </div>
 
+
+<div class="property_box">
 <% if @tenants.any?%>
   <% @tenants.each do |tenant| %>
     <a href="/tenants/<%= tenant.id %>">
@@ -95,8 +97,7 @@
           <p class="address"><%= tenant.first_name %> <%= tenant.last_name %></p>
           <div class="attributes">
             <p>$<%= tenant.price %>pw</p>
-            <%= image_tag("bed.svg", :alt => "bedrooms icon") %>
-            <p><%= tenant.bedrooms %></p>
+            <p><%= tenant.duration %> years</p>
             <%= image_tag("bath.svg", :alt => "bath icon") %>
             <p><%= tenant.bathroom %></p>
           </div>
@@ -109,4 +110,6 @@
     </a>
   <% end %>
 <% end %>
+</div>
 
+<%= render "partials/footer" %>

@@ -1,6 +1,7 @@
 <%= render "partials/navigation" %>
 <%= render "partials/header" %>
 
+<div class="property_box">
 <% if @properties.any?%>
   <% @properties.each do |property| %>
     <a href="property/<%= property.id %>">
@@ -21,7 +22,7 @@
                 </div>
               </div>
               <div class="suitable-tenants">
-                <p></i><%= property.tenants %><span class="d-sm-none d-none d-lg-inline-block">Suitable Tenants</span></p>
+                <p></i><%= property.tenants %><span class="d-sm-none d-none d-lg-inline-block"></span></p>
                 <span class="rui-icon rui-icon-arrow-right"></span>
               </div>
             </div>
@@ -31,3 +32,6 @@
     </a>
   <% end %>
 <% end %>
+</div>
+
+<%= render "partials/footer" %>

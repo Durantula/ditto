@@ -15,9 +15,13 @@ property.save
 property = Property.create(address: '300a Williams Road, Toorak', price: 1200, postcode: '3806', suburb:'Toorak', state:'Vic', picture:'https://i2.au.reastatic.net/800x600-resize,extend,r=33,g=40,b=46/6c095704098bd3f354fcf27dcafd7a6859ec32010a0ebac48b3bf30bb0c3a760/image2.jpg', bedroom:6, toilet:3)
 property.save
 
-tenant = Tenant.create(first_name: 'Michael', last_name: 'Che',suburb: 'Hawthorn', price: 450, bedrooms: 2, bathroom: 1, img_url:'https://i4.au.reastatic.net/120x160/96c19d384243112d1e58f9cb934652a034c67e3d049d11d9e5fad7eb41f04d3f/main.jpg')
+tenant = Tenant.create(first_name: 'Michael', last_name: 'Che', income: 120, suburb: 'Hawthorn', duration: 5, price: 450, bedrooms: 2, bathroom: 1, img_url:'https://i4.au.reastatic.net/120x160/96c19d384243112d1e58f9cb934652a034c67e3d049d11d9e5fad7eb41f04d3f/main.jpg')
 tenant.save
-tenant = Tenant.create(first_name: 'Jenny', last_name: 'Block',suburb: 'South Yarra', price: 475, bedrooms: 2, bathroom: 1, img_url:'https://i2.au.reastatic.net/120x160/3fa614185e8173a6b3db3a4e62febc707aad159cffa0eec0483a5c711e9c9aa1/main.jpg')
+tenant = Tenant.create(first_name: 'Jenny', last_name: 'Block', income: 80, suburb: 'South Yarra', duration: 12, price: 475, bedrooms: 2, bathroom: 1, img_url:'https://i2.au.reastatic.net/120x160/3fa614185e8173a6b3db3a4e62febc707aad159cffa0eec0483a5c711e9c9aa1/main.jpg')
 tenant.save
-tenant = Tenant.create(first_name: 'Jeremy', last_name: 'Witts',suburb: 'Hawthorn', price: 500, bedrooms: 2, bathroom: 1, img_url:'https://i1.au.reastatic.net/120x160/920f01f430a66fb635277ab5fa307f7441d64bd355f161bbfce87ba8556a28f5/main.jpg')
+tenant = Tenant.create(first_name: 'Jeremy', last_name: 'Witts', income: 85, suburb: 'Hawthorn', duration: 2, price: 500, bedrooms: 2, bathroom: 1, img_url:'https://i1.au.reastatic.net/120x160/920f01f430a66fb635277ab5fa307f7441d64bd355f161bbfce87ba8556a28f5/main.jpg')
+tenant.save
+tenant = Tenant.create(first_name: 'Ben', last_name: 'Sherlock', income: 90, suburb: 'Toorak', duration: 3, price: 350, bedrooms: 3, bathroom: 1, img_url:'https://i1.au.reastatic.net/120x160/920f01f430a66fb635277ab5fa307f7441d64bd355f161bbfce87ba8556a28f5/main.jpg')
+tenant.save
+tenant = Tenant.create(first_name: 'Ben', last_name: 'Sherlock', income: 120, suburb: 'Toorak', duration: 5, price: 350, bedrooms: 3, bathroom: 1, img_url:'https://i1.au.reastatic.net/120x160/920f01f430a66fb635277ab5fa307f7441d64bd355f161bbfce87ba8556a28f5/main.jpg')
 tenant.save

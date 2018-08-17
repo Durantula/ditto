@@ -57,6 +57,8 @@ body{
   align-items: center;
   max-width: 600px;
   margin: auto;
+  background-color: white;
+  cursor: pointer;
 
   .content{
     padding: 10px 16px;
@@ -112,6 +114,10 @@ body{
 .tenant_link{
   display: flex;
   align-items: center;
+
+  span{
+    color: #333f48;
+  }
   p{
     margin: 0px;
   }
