@@ -26,7 +26,7 @@
   </div>
 </div>
   <div id="swipe-container">
-    <div class="buddy" style="display: block;"><div class="status like">Like!</div>
+    <div class="buddy" style="display: block;">
         <div class="avatar" style="display: block; background-image: url(https://i1.au.reastatic.net/1703x899-resize,extend,r=33,g=40,b=46/14f72dcf9f312c9081202cb9430378a878731d1f70c45700de0edc7eaa8fd85f/main.jpg)">
         </div>
         <div class="swipe-info">
@@ -43,7 +43,17 @@
           <div style="float:right;" class="profile-pic">
             <div class="circle" style="background-image: url(https://i4.au.reastatic.net/120x160/96c19d384243112d1e58f9cb934652a034c67e3d049d11d9e5fad7eb41f04d3f/main.jpg)"></div>
             <div class="name">John Bear</div>
+            </div>
         </div>
+        <div class="swipe-content">
+            <div class="toggler">
+                <div class="ttext">
+                    <p>Modern easy living in a convenient location</p>
+                    <div>This well designed spacious residence sits on its own title and offers a..</div>
+                </div>
+                <%= image_tag("map.png", :alt => "map", :class => "map") %>
+                <%= image_tag("amenities.png", :alt => "amenities", :class => "amenity") %>
+            </div>
         </div>
     </div>
     <div class="buddy" style="display: block;">
@@ -64,6 +74,16 @@
             <div class="circle" style="background-image: url(https://i4.au.reastatic.net/120x160/7db477b9bf556bfe3546b210027fa88e44682b2ba257943337599c4250180258/main.jpg)"></div>
             <div class="name">Kevin Hartwell</div>
         </div>
+        </div>
+        <div class="swipe-content">
+            <div class="toggler">
+                <div class="ttext">
+                    <p>Modern easy living in a convenient location</p>
+                    <div>This well designed spacious residence sits on its own title and offers a..</div>
+                </div>
+                <%= image_tag("map.png", :alt => "map", :class => "map") %>
+                <%= image_tag("amenities.png", :alt => "amenities", :class => "amenity") %>
+            </div>
         </div>
     </div>
     <div class="buddy" style="display: block;">

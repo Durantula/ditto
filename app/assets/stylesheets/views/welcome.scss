@@ -458,6 +458,40 @@ body{
 
 // swipey //
 
+.swipe-content {
+  z-index: 9999;
+  position: relative;
+.toggler {
+  
+  display: none;
+  &.toggle {
+    display: block;
+    background: white;
+  }
+}
+  
+
+  .ttext {
+      
+    padding: 12px;
+    }
+
+    p{
+      margin-bottom: 12px;
+      font-size: 16px;
+      font-weight: 600;
+    }
+
+    .map {
+      margin-top: 3px;
+      width: 100%;
+    }
+
+    .amenity {
+      width: 100%;
+    margin: 12px 3px 3px -6px;
+    }
+}
 
 #swipe-container {
   margin: auto !important;
@@ -475,10 +509,10 @@ body{
   height: 100%;
   display: none;
   background: #fff;
-  box-shadow: 0 0 10px rgba(0,0,0,0.2);
   position: absolute;
   cursor: hand;
   border: 1px solid #e6e6e6;
+  border-bottom: 0;
 
   font-family: "Museo-Sans-300";
   font-size: 14px;
@@ -535,6 +569,8 @@ body{
 
 .swipe-info {
   padding: 17px 12px 12px;
+  overflow: hidden;
+  background: #fff;
 .attributes {
   display: flex;
   margin-top: 12px;
