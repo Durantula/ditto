@@ -96,10 +96,12 @@
         <div class="property-info">
           <p class="address"><%= tenant.first_name %> <%= tenant.last_name %></p>
           <div class="attributes">
+            <p><%= tenant.suburb %></p>
+            <%= image_tag("bed.svg", :alt => "bedrooms icon") %>
+            <p><%= tenant.bedrooms %></p>
             <p>$<%= tenant.price %>pw</p>
             <p><%= tenant.duration %> years</p>
-            <%= image_tag("bath.svg", :alt => "bath icon") %>
-            <p><%= tenant.bathroom %></p>
+            <p><%= tenant.income %>k</p>
           </div>
         </div>
       </div>
