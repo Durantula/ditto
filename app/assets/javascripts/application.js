@@ -46,6 +46,41 @@ $( "#filters" ).click(function() {
         });
       };
       
-      rangeSlider();    
+      rangeSlider();   
+      
+      
+    /* Swipe a property */
+    $(".buddy").on("swiperight",function(){
+      $('.toggler').hide();
+      $(this).addClass('rotate-left').delay(700).fadeOut(1);
+      $('.buddy').find('.status').remove();
+
+      $(this).append('<div class="status like">Like!</div>');      
+      if ( $(this).is(':last-child') ) {
+        $('.buddy:nth-child(1)').removeClass ('rotate-left rotate-right').fadeIn(300);
+      } else {
+          $(this).next().removeClass('rotate-left rotate-right').fadeIn(400);
+      }
+    });  
+
+  $(".buddy").on("swipeleft",function(){
+    $('.toggler').hide();
+    $(this).addClass('rotate-right').delay(700).fadeOut(1);
+    $('.buddy').find('.status').remove();
+    $(this).append('<div class="status dislike">Dislike!</div>');
+
+    if ( $(this).is(':last-child') ) {
+    $('.buddy:nth-child(1)').removeClass ('rotate-left rotate-right').fadeIn(300);
+    } else {
+        $(this).next().removeClass('rotate-left rotate-right').fadeIn(400);
+    } 
+  });
+
+  
+$( ".swipe-info" ).click(function() {
+  $( ".toggler" ).slideToggle( "slow", function() {
+    $(this).toggleClass('toggle');
+  });
+});
 
 });

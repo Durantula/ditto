@@ -449,6 +449,183 @@ body{
   }
 }
 
+
+
 .margin-top-50{
   margin-top: 50px;
+}
+
+
+// swipey //
+
+.swipe-content {
+  z-index: 9999;
+  position: relative;
+.toggler {
+  
+  display: none;
+  &.toggle {
+    display: block;
+    background: white;
+  }
+}
+  
+
+  .ttext {
+      
+    padding: 12px;
+    }
+
+    p{
+      margin-bottom: 12px;
+      font-size: 16px;
+      font-weight: 600;
+    }
+
+    .map {
+      margin-top: 3px;
+      width: 100%;
+    }
+
+    .amenity {
+      width: 100%;
+    margin: 12px 3px 3px -6px;
+    }
+}
+
+#swipe-container {
+  margin: auto !important;
+  display: block;
+  list-style-type: none;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.buddy {
+  width: 100%;
+  height: 100%;
+  display: none;
+  background: #fff;
+  position: absolute;
+  cursor: hand;
+  border: 1px solid #e6e6e6;
+  border-bottom: 0;
+
+  font-family: "Museo-Sans-300";
+  font-size: 14px;
+  color: #333f48; 
+}
+.rotate-left {
+  transform: rotate(30deg) scale(0.8);
+  transition: 1s;
+  margin-left: 400px;
+  cursor: e-resize;
+  opacity: 0;
+  z-index: 10;
+}
+.rotate-right {
+  transform: rotate(-30deg) scale(0.8);
+  transition: 1s;
+  opacity: 0;
+  margin-left: -400px;
+  cursor: w-resize;
+  z-index: 10;
+}
+.avatar {
+  height: 70%;
+  background: #222;
+  display: block;
+  background-size: auto 100% !important;
+  background-position: center;
+ background-repeat: no-repeat;
+}
+.like {
+  border-radius: 5px;
+  padding: 5px 10px;
+  border: 2px solid green;
+  color: green;
+  text-transform: uppercase;
+  font-size: 15px;
+  position: absolute;
+  top: 50px;
+  right: 40px;
+  text-shadow: none;
+}
+.dislike {
+  border-radius: 5px;
+  padding: 5px 10px;
+  border: 2px solid red;
+  color: red;
+  text-transform: uppercase;
+  font-size: 15px;
+  position: absolute;
+  top: 50px;
+  left: 40px;
+  text-shadow: none;
+}
+
+.swipe-info {
+  padding: 17px 12px 12px;
+  overflow: hidden;
+  background: #fff;
+.attributes {
+  display: flex;
+  margin-top: 12px;
+}
+
+  .price {
+    font-size: 21px;
+    font-weight: 600;
+    margin-bottom: 12px;
+  }
+  .address {
+    font-size: 18px;
+    font-weight: 500;
+  }
+
+  p {
+    font-family: "Museo-Sans-300";
+    font-size: 18px;
+    color: #333f48;
+    margin-right: 15px;
+  }
+
+  img {
+    margin-right: 4px;
+    height: 20px;
+  }
+
+
+  .circle {
+    width: 75px;
+    height: 75px;
+    border-radius: 50px;
+    margin-top: -3px;
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border: 1px solid grey;    
+  }
+
+  .name {
+    text-align: center;
+    font-size: 18px;
+    margin-top: 4px;
+  }
+
+  .profile-pic {
+    float: right;
+    width: 35%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .left-cc {
+    float: left;
+    width: 65%;
+  }
 }

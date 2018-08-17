@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.4/jquery.mobile-1.4.4.min.css">
+<script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+<script src="https://code.jquery.com/mobile/1.4.4/jquery.mobile-1.4.4.min.js"></script>
+</head>
+<body>
+<div class="top-bar">
+<div class="container">
+    <div class="row navigation-bar">
+      <div class="burger">
+        <div id="nav-icon1">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+      <a href="/"><img alt="Ditto icon" src="/assets/Group-84ff3d8f92103843ba0dac952428bf59f27b8e43d2b374df68e6dfaaaa3fcc10.svg"></a>
+
+      <div class="agent-profile">
+        <span class="rui-icon rui-icon-user-off"></span>
+      </div>
+    </div>
+  </div>
+</div>
+  <div id="swipe-container">
+    <div class="buddy" style="display: block;">
+        <div class="avatar" style="display: block; background-image: url(https://i1.au.reastatic.net/1703x899-resize,extend,r=33,g=40,b=46/14f72dcf9f312c9081202cb9430378a878731d1f70c45700de0edc7eaa8fd85f/main.jpg)">
+        </div>
+        <div class="swipe-info">
+            <div class="left-cc">
+            <div class="price">$540 per week</div>
+            <div class="address">73 Grove Street, Hawthorn</div>
+            <div class="attributes">
+                <img alt="bedrooms icon" src="/assets/bed-7ec0de03ae4f6dfc635a2f791d809e8a49a167e48227bed51c67e29bebf36181.svg">
+                <p>2</p>
+                <img alt="bath icon" src="/assets/bath-8c5c84297fca6e98480a1aea8bff9d77595be8828469839ddec6a9ddcd19be64.svg">
+                <p>1</p>
+          </div>
+          </div>
+          <div style="float:right;" class="profile-pic">
+            <div class="circle" style="background-image: url(https://i4.au.reastatic.net/120x160/96c19d384243112d1e58f9cb934652a034c67e3d049d11d9e5fad7eb41f04d3f/main.jpg)"></div>
+            <div class="name">John Bear</div>
+            </div>
+        </div>
+        <div class="swipe-content">
+            <div class="toggler">
+                <div class="ttext">
+                    <p>Modern easy living in a convenient location</p>
+                    <div>This well designed spacious residence sits on its own title and offers a..</div>
+                </div>
+                <%= image_tag("map.png", :alt => "map", :class => "map") %>
+                <%= image_tag("amenities.png", :alt => "amenities", :class => "amenity") %>
+            </div>
+        </div>
+    </div>
+    <div class="buddy" style="display: block;">
+        <div class="avatar" style="display: block; background-image: url(https://i2.au.reastatic.net/800x600/c11cf62e137e60370ee5a0e85e8b7b9450938cb5c98a7e58e0e6dd6ad4a62fba/main.jpg)">
+        </div>
+        <div class="swipe-info">
+            <div class="left-cc">
+            <div class="price">$550 per week</div>
+            <div class="address">8/1 Oak Street, Hawthorn</div>
+            <div class="attributes">
+                <img alt="bedrooms icon" src="/assets/bed-7ec0de03ae4f6dfc635a2f791d809e8a49a167e48227bed51c67e29bebf36181.svg">
+                <p>2</p>
+                <img alt="bath icon" src="/assets/bath-8c5c84297fca6e98480a1aea8bff9d77595be8828469839ddec6a9ddcd19be64.svg">
+                <p>1</p>
+          </div>
+          </div>
+          <div style="float:right;" class="profile-pic">
+            <div class="circle" style="background-image: url(https://i4.au.reastatic.net/120x160/7db477b9bf556bfe3546b210027fa88e44682b2ba257943337599c4250180258/main.jpg)"></div>
+            <div class="name">Kevin Hartwell</div>
+        </div>
+        </div>
+        <div class="swipe-content">
+            <div class="toggler">
+                <div class="ttext">
+                    <p>Modern easy living in a convenient location</p>
+                    <div>This well designed spacious residence sits on its own title and offers a..</div>
+                </div>
+                <%= image_tag("map.png", :alt => "map", :class => "map") %>
+                <%= image_tag("amenities.png", :alt => "amenities", :class => "amenity") %>
+            </div>
+        </div>
+    </div>
+    <div class="buddy" style="display: block;">
+        <div class="avatar" style="display: block; background-image: url(https://i2.au.reastatic.net/800x600/93d0a0c972b2f48cb9426581def06814e506d3bc43b017db91008018ddfe0607/main.jpg)">
+        </div>
+        <div class="swipe-info">
+            <div class="left-cc">
+            <div class="price">$520 per week</div>
+            <div class="address">2/70 Power Street, Hawthorn</div>
+            <div class="attributes">
+                <img alt="bedrooms icon" src="/assets/bed-7ec0de03ae4f6dfc635a2f791d809e8a49a167e48227bed51c67e29bebf36181.svg">
+                <p>2</p>
+                <img alt="bath icon" src="/assets/bath-8c5c84297fca6e98480a1aea8bff9d77595be8828469839ddec6a9ddcd19be64.svg">
+                <p>1</p>
+          </div>
+          </div>
+          <div style="float:right;" class="profile-pic">
+            <div class="circle" style="background-image: url(https://i3.au.reastatic.net/120x160/2b650a1495c52a1c2b0d3fc31055772dfc3f99a3264de6c3ef764ae566e84ee7/main.jpg)"></div>
+            <div class="name">Jon Cho</div>
+        </div>
+        </div>
+    </div>
+    <div class="buddy" style="display: block;">
+        <div class="avatar" style="display: block; background-image: url(https://i2.au.reastatic.net/800x600/ebd215c0a837061daf67f765347e06a993e0a7710aa1827df5efd22d67193f41/main.jpg)">
+        </div>
+        <div class="swipe-info">
+            <div class="left-cc">
+            <div class="price">$410 per week</div>
+            <div class="address">13 Belgrave Street, Hawthorn</div>
+            <div class="attributes">
+                <img alt="bedrooms icon" src="/assets/bed-7ec0de03ae4f6dfc635a2f791d809e8a49a167e48227bed51c67e29bebf36181.svg">
+                <p>2</p>
+                <img alt="bath icon" src="/assets/bath-8c5c84297fca6e98480a1aea8bff9d77595be8828469839ddec6a9ddcd19be64.svg">
+                <p>1</p>
+          </div>
+          </div>
+          <div style="float:right;" class="profile-pic">
+            <div class="circle" style="background-image: url(https://i1.au.reastatic.net/120x160/324387eafe527d0aba7cb7742c1ea9195108f5a369cbe3f886b4f9d842fa1736/main.jpg)"></div>
+            <div class="name">Walter White</div>
+        </div>
+        </div>
+    </div>
+    <div class="buddy" style="display: block;">
+        <div class="avatar" style="display: block; background-image: url(https://i2.au.reastatic.net/800x600/5f147df7283ee9ea43790887e791cb9986c34b364a3af1413cff77204cee990d/main.jpg)">
+        </div>
+        <div class="swipe-info">
+            <div class="left-cc">
+            <div class="price">$580 per week</div>
+            <div class="address">10/26 Hawthorn Glen, Hawthorn</div>
+            <div class="attributes">
+                <img alt="bedrooms icon" src="/assets/bed-7ec0de03ae4f6dfc635a2f791d809e8a49a167e48227bed51c67e29bebf36181.svg">
+                <p>2</p>
+                <img alt="bath icon" src="/assets/bath-8c5c84297fca6e98480a1aea8bff9d77595be8828469839ddec6a9ddcd19be64.svg">
+                <p>1</p>
+          </div>
+          </div>
+          <div style="float:right;" class="profile-pic">
+            <div class="circle" style="background-image: url(https://i4.au.reastatic.net/120x160/db3e149df5811d33217d117b16ba0b4d1e3800a377890170d1e875095fd3bc44/main.jpg)"></div>
+            <div class="name">Jack Bauer</div>
+        </div>
+        </div>
+    </div>
+  </div>
+</body>
+</html>
